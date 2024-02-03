@@ -56,7 +56,6 @@
     <Compile Include="AffineCipher.Designer.cs">
       <DependentUpon>AffineCipher.cs</DependentUpon>
     </Compile>
-    <Compile Include="AffineEncrypt.cs" />
     <Compile Include="DB1.cs" />
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>

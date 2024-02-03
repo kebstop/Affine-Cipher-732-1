@@ -6,7 +6,7 @@ namespace Affine
 {
     public partial class cipherForm : Form
     {
-        private string encryptedText; // Добавили поле для хранения зашифрованного текста
+        private string encryptedText;
 
         public cipherForm()
         {
@@ -43,7 +43,7 @@ namespace Affine
 
                 if (IsCoprime(keyA, 26))
                 {
-                    string decryptedMessage = AffineDecrypt(encryptedText, keyA, keyB); // Используем зашифрованный текст
+                    string decryptedMessage = AffineDecrypt(encryptedText, keyA, keyB);
                     ResultTextBox.Text = decryptedMessage;
                 }
                 else
@@ -67,7 +67,7 @@ namespace Affine
 
                 if (IsCoprime(keyA, 26))
                 {
-                    encryptedText = AffineEncrypt(message, keyA, keyB); // Сохраняем зашифрованный текст
+                    encryptedText = AffineEncrypt(message, keyA, keyB);
                     ResultTextBox.Text = encryptedText;
                 }
                 else
